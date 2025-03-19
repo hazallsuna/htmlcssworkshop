@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required> <br><br>
+        <label for="age">Age:</label>
+        <input type="number" min="18" max="120" required><br><br>
+        <!--regex
+        [A-Za-z0-9\W] → Köşeli parantez içindeki karakter sınıflarından biri girilebilir:
+
+        A-Z → Büyük harfler
+        a-z → Küçük harfler
+        0-9 → Rakamlar
+        \W → Kelime olmayan karakterler (boşluk, noktalama işaretleri, özel karakterler)
+        + → En az bir kez bu karakterlerden biri olmalı (boş bırakılmasına izin vermez).
+        -->
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" maxlength="15" pattern="[A-Za-z0-9\W]+"required> <br> <br> 
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
