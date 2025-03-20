@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        a:visited{
+            color:purple;
+        }
+        a:active{
+            background-color: white;
+        }
+        /*listenin çift elemanlarını renklendirir*/
+        li:nth-child(2n){
+            background-color: lightblue;
+        }
+         /*Pseudo-Element: İlk harfi büyük yap*/
+        p::first-letter{
+            font-size: 2em;
+            color: red;
+        }
+        /*ilk satırı farklı stil yap*/
+        p::first-line{
+            font-weight: bold;
+        }
+        /*içeriğin öncesine simge ekle*/
+        .button::before{
+            content: "+";
+        }
+        .button::after{
+            content: "$";
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Bana tıkla</a>
+    <br>
+    <a href="https://github.com/hazallsuna"></a>
+
+    <ul>
+        <li>Öğe 1</li>
+        <li>Öğe 2</li>
+        <li>Öğe 3</li>
+        <li>Öğe 4</li>
+        <li>Öğe 5</li>
+        <li>Öğe 6</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, commodi!</p>
+
+    <button class="button">Buton</button>
+</body>
+</html>

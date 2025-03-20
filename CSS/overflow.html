@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow özelliği</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            border: 1px solid #333;
+            margin-bottom: 50px;
+        }
+        /*içerik dışarı taşarsa normal gösterilir*/
+        .visible-box{
+            overflow: visible;
+        }
+        /*içerik taşarsa gizlenir*/
+        .hidden-box{
+            overflow: hidden;
+        }
+        /*içerik taşarsa kaydırma çubuğu eklenir*/
+        .scroll-box{
+            overflow: scroll;
+        }
+        /*içerik taşarsa gerektiğinde kaydırma çubuğu eklenir*/
+        .auto-box{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box visible-box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam modi labore, laudantium blanditiis dolorem repellendus suscipit asperiores reprehenderit laboriosam optio. In temporibus eos amet vitae itaque veniam minima id totam!
+    </div>
+
+    <div class="box hidden-box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nulla deleniti sit, aut repellat nihil ut natus, cupiditate odit assumenda commodi. Sapiente voluptas libero non ab temporibus. Expedita, quos molestias!
+    </div>
+
+    <div class="box scroll-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, similique.
+    </div>
+
+    <div class="box auto-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, similique.
+    </div>
+</body>
+</html>
